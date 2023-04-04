@@ -1,0 +1,286 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/soivigol-slider-item/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+  display: inline-block;
+  min-width: 200px;
+  width: 200px;
+  max-width: 200px;
+  box-shadow: 0 0 3px 3px gray;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin-right: 0.5rem;
+  vertical-align: top;
+  text-decoration: none !important;
+  transition: all ease-in-out 0.3s;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:hover,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:hover {
+  box-shadow: 0 0 3px 3px gray !important;
+  color: black !important;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  margin: 0;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image > div,
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image img,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image > div,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image figcaption,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image figcaption {
+  display: none !important;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p {
+  padding: 0.3rem 0.7rem;
+  color: black;
+  margin: 0;
+  text-decoration: none;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p:hover,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p:hover {
+  text-decoration: none;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p.cha-footer-cluster.cha-footer-cluster,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p.cha-footer-cluster.cha-footer-cluster {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p.text-cluster.text-cluster,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item p.text-cluster.text-cluster {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: darkgray;
+  padding-top: 0;
+}
+.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .url-text-cluster,
+a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .url-text-cluster {
+  padding: 0.3rem 0.7rem 0.6rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: darkblue;
+  display: inline-block;
+  line-height: 1;
+}
+
+.inner-container.size-medium .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.inner-container.size-medium a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.glider-contain.size-medium .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.glider-contain.size-medium a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+  width: 220px;
+  min-width: 220px;
+  max-width: 220px;
+}
+@media (max-width: 768px) {
+  .inner-container.size-medium .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  .inner-container.size-medium a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  .glider-contain.size-medium .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  .glider-contain.size-medium a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+.inner-container.size-big .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.inner-container.size-big a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.glider-contain.size-big .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.glider-contain.size-big a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+}
+@media (max-width: 768px) {
+  .inner-container.size-big .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  .inner-container.size-big a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  .glider-contain.size-big .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+  .glider-contain.size-big a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+}
+
+.inner-container.grip .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.inner-container.grip a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+  width: 100% !important;
+  min-width: 100% !important;
+  margin-right: 0;
+}
+.inner-container.grip .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:hover,
+.inner-container.grip a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:hover {
+  transform: scale(1);
+}
+.inner-container.grip.maps .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.inner-container.grip.maps a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+  border-radius: 3rem;
+  border: 5px solid blue;
+  padding: 5px;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.inner-container.grip.maps .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image,
+.inner-container.grip.maps a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .wp-block-image {
+  padding-top: 100%;
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+.inner-container.grip.maps .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-footer-cluster,
+.inner-container.grip.maps a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-footer-cluster {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blue;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+  width: calc(100% - 4px - 3rem) !important;
+  max-width: 100%;
+  border: 2px solid darkblue;
+  overflow: visible;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  border-radius: 0;
+  padding: 2rem 1rem 1rem;
+  box-shadow: 0 0 3px 3px darkblue;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:last-child,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:last-child {
+  margin-bottom: 0.5rem;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:hover,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item:hover {
+  transform: scale(1);
+  box-shadow: 0 0 3px 3px darkblue !important;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item::after,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  bottom: -1.1rem;
+  border-bottom: 2px solid darkblue;
+  border-right: 2px solid darkblue;
+  transform: rotate(45deg);
+  left: 1.8rem;
+  box-shadow: 3px 3px 3px darkblue;
+  z-index: 0;
+  top: unset;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .label-best-option,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .label-best-option {
+  position: absolute;
+  top: -1.3rem;
+  left: -10px;
+  background-color: orange;
+  padding: 0.3rem 1rem;
+  color: white;
+  font-weight: 700;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .label-best-option::before,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .label-best-option::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  border-color: #303838 #303838 transparent transparent;
+  border-style: solid;
+  border-width: 4px;
+  bottom: -8px;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-footer-cluster,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-footer-cluster {
+  font-size: 1.3rem;
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-image-cluster,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-image-cluster {
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 9;
+}
+@media (min-width: 768px) {
+  .inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-image-cluster,
+  .inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-image-cluster {
+    float: left;
+    width: 30% !important;
+    padding-top: 30%;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-image-cluster,
+  .inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .cha-image-cluster {
+    width: 45% !important;
+  }
+}
+.inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .url-text-cluster,
+.inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .url-text-cluster {
+  display: inline-block;
+  padding: 0.5em 2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  border-radius: 5px;
+  border: 1px solid rgba(34, 98, 99, 0.4);
+  background-color: rgba(34, 98, 99, 0.6705882353);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  min-width: 250px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .inner-container.best-option .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .url-text-cluster,
+  .inner-container.best-option a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item .url-text-cluster {
+    min-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

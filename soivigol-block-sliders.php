@@ -21,6 +21,7 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_soivigol_block_sliders_block_init() {
-	register_block_type( __DIR__ . '/build' );
+		register_block_type( __DIR__ . '/build/soivigol-slider/' );
+		register_block_type( __DIR__ . '/build/soivigol-slider-item/' );
 }
 add_action( 'init', 'create_block_soivigol_block_sliders_block_init' );

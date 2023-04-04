@@ -1,0 +1,144 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-chavetas-bloques-chavetas-cluster {
+	padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	.glider-contain {
+		position: static;
+		overflow: hidden;
+		max-width: 100%;
+		margin: auto;
+	}
+	.inner-container,
+	.glider-block {
+		width: max-content;
+		padding: .5rem 0;
+		&.glider {
+			width: auto;
+		}
+		&.best-option {
+			max-width: 100%;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&.grip {
+			max-width: 100%;
+			width: 100%;
+			display: grid;
+			grid-auto-rows: 1fr;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 1rem;
+			@media( max-width : 768px ) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+			&.size-medium {
+				grid-template-columns: repeat(3, 1fr);
+				@media( max-width : 768px ) {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			&.size-big {
+				grid-template-columns: repeat(2, 1fr);
+				@media( max-width : 768px ) {
+					grid-template-columns: repeat(1, 1fr);
+				}
+			}
+			&.maps {
+				&.size-big {
+					grid-template-columns: repeat(2, 1fr);
+					max-width: calc( 100% - 80px );
+					margin-left: auto;
+					margin-right: auto;
+					grid-gap: 2.5rem;
+					@media( max-width : 768px ) {
+						grid-template-columns: repeat(2, 1fr);
+						max-width: calc( 100% - 20px );
+						grid-gap: 1rem;
+					}
+				}
+				&.size-super-big {
+					grid-template-columns: repeat(1, 1fr);
+					max-width: calc( 100% - 240px );
+					margin-left: auto;
+					margin-right: auto;
+					@media( max-width : 768px ) {
+						grid-template-columns: repeat(1, 1fr);
+						max-width: calc( 100% - 80px );
+					}
+				}
+			}
+		}
+		&.slider {
+			position: relative;
+			background-color: transparent;
+		}
+	}
+
+	button.glider-prev,
+	i.glider-prev,
+	button.glider-next,
+	i.glider-next {
+		font-size: 30px;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+	}
+
+	button.glider-prev svg,
+	i.glider-prev svg,
+	button.glider-next svg,
+	i.glider-next svg {
+		width: .6rem;
+		fill: #82d3d4;
+	}
+	button.glider-prev,
+	i.glider-prev {
+		left: -.6rem;
+		svg {
+			margin-right: .2rem;
+		}
+	}
+
+	button.glider-next,
+	i.glider-next {
+		right: -.6rem;
+		svg {
+			margin-left: .2rem;
+		}
+	}
+
+	.glider-next.disabled, .glider-prev.disabled {
+		opacity: .5;
+	}
+
+	@media ( max-width: 1024px ) {
+		button.glider-prev,
+		i.glider-prev,
+		button.glider-next,
+		i.glider-next {
+			display: block;
+		}
+	}
+
+}
+
+.wp-block-chavetas-bloques-chavetas-main-scheme-item {
+	.wp-block-chavetas-bloques-chavetas-cluster {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}

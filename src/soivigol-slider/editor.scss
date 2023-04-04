@@ -1,0 +1,108 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-chavetas-bloques-chavetas-cluster {
+	overflow: hidden;
+	border: 1px solid transparent;
+	overflow-x: auto;
+	.inner-container {
+		> .block-editor-inner-blocks > .block-editor-block-list__layout {
+			width: max-content;
+		}
+		&.grip {
+			display: block !important;
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 100%;
+				max-width: 100%;
+				width: 100%;
+				display: grid;
+				grid-auto-rows: 1fr;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 1rem;
+				@media( max-width : 768px ) {
+					grid-template-columns: repeat(3, 1fr);
+				}
+			}
+		}
+		&.best-option {
+			display: block !important;
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 100%;
+				max-width: 100%;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+		&.size-medium {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				grid-template-columns: repeat(3, 1fr);
+				@media( max-width : 768px ) {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+		}
+		&.size-big {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				grid-template-columns: repeat(2, 1fr);
+				@media( max-width : 768px ) {
+					grid-template-columns: repeat(1, 1fr);
+				}
+			}
+		}
+		&.size-super-big {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				grid-template-columns: repeat(1, 1fr);
+				@media( max-width : 768px ) {
+					grid-template-columns: repeat(1, 1fr);
+				}
+			}
+		}
+	}
+	.block-list-appender.block-list-appender {
+		position: absolute !important;
+		bottom: 0;
+		right: 0;
+		left: auto !important;
+		border: 0;
+		box-shadow: unset;
+		box-shadow: 0 0 0 1px inset lightgrey;
+		.block-editor-button-block-appender {
+			width: 24px !important;
+			height: 24px;
+			position: relative;
+		}
+	}
+	&:hover{
+		border: 1px solid lightblue;
+	}
+ }
+
+ .wp-block-chavetas-bloques-chavetas-cluster::-webkit-scrollbar {
+	height: 8px;
+	animation: all ease-in-out 2s;
+	z-index: 9999;
+}
+
+.wp-block-chavetas-bloques-chavetas-cluster::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0);
+}
+
+.wp-block-chavetas-bloques-chavetas-cluster::-webkit-scrollbar-thumb {
+	border-radius: 1em;
+	width: .1rem;
+	max-width: .1rem;
+	background-color: blue;
+	outline: 1px solid blue;
+}
+
+.block-editor-block-list__layout .wp-block-chavetas-bloques-chavetas-cluster.block-editor-block-list__block:not([contenteditable]):focus:after {
+	position: relative;
+	box-shadow: unset;
+	outline: none;
+}

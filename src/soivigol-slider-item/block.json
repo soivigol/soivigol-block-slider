@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "soivigol/soivigol-slider-item",
+	"version": "0.1.0",
+	"title": "Soivigol Slider Item",
+	"category": "design",
+	"description": "Individual item to Soivigol Container Slider",
+	"supports": {
+		"html": false
+	},
+	"parent": ["chavetas-bloques/chavetas-cluster"],
+	"attributes": {
+		"chaURL":{
+			"type":"string",
+			"default":""
+		},
+		"text":{
+			"type":"string",
+			"default":""
+		},
+		"urlText":{
+			"type":"string",
+			"default":""
+		},
+		"type":{
+			"type" : "string",
+			"default" : ""
+		},
+		"bestOption": {
+			"type": "string",
+			"default": "La mejor opción"
+		}
+	},
+	"usesContext": [
+		"chavetas-blocks/chavetas-cluster-format",
+		"chavetas-blocks/chavetas-cluster-type"
+	],
+	"textdomain": "chavetas-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

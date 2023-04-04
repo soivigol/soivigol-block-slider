@@ -29,12 +29,8 @@ echo "Waiting for DB image to be ready..."
 sleep 5s
 
 # WordPress - Determine environment (local/codespace)
-if [[ "$CODESPACES" ]]
-then
+
 	WORDPRESS_SITE_HOST="https://${CODESPACE_NAME}-${WORDPRESS_WWW_PORT}.preview.app.github.dev"
-else
-	WORDPRESS_SITE_HOST="http://localhost:${WORDPRESS_WWW_PORT}"
-fi
 
 # WordPress - Setting title
 if [[ -z "$WORDPRESS_WWW_TITLE" ]]

@@ -1,0 +1,249 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+ a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+	display: inline-block;
+	min-width: 200px;
+	width: 200px;
+	max-width: 200px;
+    box-shadow: 0 0 3px 3px gray;
+    border-radius: .25rem;
+    overflow: hidden;
+	margin-right: .5rem;
+	vertical-align: top;
+	text-decoration: none !important;
+	transition: all ease-in-out .3s;
+	&:hover {
+		box-shadow: 0 0 3px 3px gray !important;
+		color: black !important;
+		transform: scale(1.05);
+	}
+	@media ( max-width : 768px ) {
+		width: 150px;
+		min-width: 150px;
+		max-width: 150px;
+	}
+	.wp-block-image {
+		position: relative;
+		padding-top: 56.25%;
+		overflow: hidden;
+		margin: 0;
+		> div,
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			min-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
+		figcaption {
+			display: none !important;
+		}
+	}
+	p {
+		padding: .3rem .7rem;
+		color: black;
+		margin: 0;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	p.cha-footer-cluster.cha-footer-cluster  {
+		font-size: 1rem;
+		line-height: 1.3;
+		font-weight: 700;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+	p.text-cluster.text-cluster {
+		font-size: 0.8rem;
+		line-height: 1.2;
+		color: darkgray;
+		padding-top: 0;
+	}
+	.url-text-cluster {
+		padding: .3rem .7rem .6rem;
+		font-weight: 700;
+		font-size: .8rem;
+		color: darkblue;
+		display: inline-block;
+		line-height: 1;
+	}
+}
+
+.inner-container,
+.glider-contain {
+	&.size-medium {
+		.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+		a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+			width: 220px;
+			min-width: 220px;
+			max-width: 220px;
+			@media ( max-width : 768px ) {
+				width: 200px;
+				min-width: 200px;
+				max-width: 200px;
+			}
+		}
+	}
+	&.size-big {
+		.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+		a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+			width: 350px;
+			min-width: 350px;
+			max-width: 350px;
+			@media ( max-width : 768px ) {
+				width: 280px;
+				min-width: 280px;
+				max-width: 280px;
+			}
+		}
+	}
+}
+
+.inner-container {
+	&.grip {
+		.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+		a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+			width: 100% !important;
+			min-width: 100% !important;
+			margin-right: 0;
+			&:hover {
+				transform: scale(1);
+			}
+		}
+		&.maps {
+			.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+			a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+				border-radius: 3rem;
+				border: 5px solid blue;
+				padding: 5px;
+				overflow: visible;
+				position: relative;
+				margin-bottom: 1rem;
+				.wp-block-image {
+					padding-top: 100%;
+					border-radius: 2.5rem;
+					overflow: hidden;
+				}
+				.cha-footer-cluster {
+					position: absolute;
+					bottom: -1.5rem;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: blue;
+					border-radius: 1rem;
+					color: white;
+					padding: 1rem;
+				}
+			}
+		}
+	}
+	&.best-option {
+		.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item,
+		a.wp-block-chavetas-bloques-chavetas-cluster-item.wp-block-chavetas-bloques-chavetas-cluster-item {
+			width: calc( 100% - 4px - 3rem ) !important;
+			max-width: 100%;
+			border: 2px solid darkblue;
+			overflow: visible;
+			margin-right: auto !important;
+			margin-left: auto !important;
+			border-radius: 0;
+			padding: 2rem 1rem 1rem;
+			box-shadow: 0 0 3px 3px darkblue;
+			position: relative;
+			margin-bottom: 2.5rem;
+			&:last-child {
+				margin-bottom: .5rem;
+			}
+			&:hover {
+				transform: scale(1);
+				box-shadow: 0 0 3px 3px darkblue !important;
+			}
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 2rem;
+				height: 2rem;
+				background: white;
+				bottom: -1.1rem;
+				border-bottom: 2px solid darkblue;
+				border-right: 2px solid darkblue;
+				transform: rotate( 45deg );
+				left: 1.8rem;
+				box-shadow: 3px 3px 3px darkblue;
+				z-index: 0;
+				top: unset;
+			}
+			.label-best-option {
+				position: absolute;
+				top: -1.3rem;
+				left: -10px;
+				background-color: orange;
+				padding: .3rem 1rem;
+				color: white;
+				font-weight: 700;
+				&::before {
+					content: "";
+					left: 0;
+					position: absolute;
+					border-color: #303838 #303838 transparent transparent;
+					border-style: solid;
+					border-width: 4px;
+					bottom: -8px;
+				}
+			}
+			.cha-footer-cluster {
+				font-size: 1.3rem;
+			}
+			.cha-image-cluster {
+				border-radius: 5px;
+				overflow: hidden;
+				z-index: 9;
+				@media ( min-width: 768px ) {
+					float: left;
+					width: 30% !important;
+					padding-top: 30%;
+					margin-right: 2rem;
+				}
+				@media ( min-width: 1280px ) {
+					width: 45% !important;
+				}
+			}
+			.url-text-cluster {
+				display: inline-block;
+				padding: 0.5em 2em;
+				font-size: 0.9em;
+				font-weight: 500;
+				letter-spacing: 0.2px;
+				text-transform: none;
+				border-radius: 5px;
+				border: 1px solid rgba(34, 98, 99, 0.4);
+				background-color: rgba(34, 98, 99, 0.6705882353);
+				color: white;
+				text-decoration: none;
+				text-align: center;
+				min-width: 250px;
+				margin-top: 1rem;
+				margin-bottom: .5rem;
+				font-weight: 700;
+				@media ( max-width: 768px ) {
+					min-width: 90%;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	}
+}

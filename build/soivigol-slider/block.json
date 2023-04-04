@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "soivigol/soivigol-slider",
+  "version": "1.0",
+  "title": "Soivigol Slider",
+  "category": "design",
+  "description": "Block to create a slider with any child elements. You can insert a image or a group with different elements",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "normal"
+    },
+    "format": {
+      "type": "string",
+      "default": "0"
+    },
+    "size": {
+      "type": "string",
+      "default": "small"
+    },
+    "design": {
+      "type": "string",
+      "default": "slider"
+    }
+  },
+  "providesContext": {
+    "chavetas-blocks/chavetas-cluster-format": "format",
+    "chavetas-blocks/chavetas-cluster-type": "type"
+  },
+  "textdomain": "chavetas-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
