@@ -7,39 +7,39 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-chavetas-bloques-chavetas-cluster {
+.wp-block-soivigol-soivigol-slider {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
-.wp-block-chavetas-bloques-chavetas-cluster .glider-contain {
+.wp-block-soivigol-soivigol-slider .glider-contain {
   position: static;
   overflow: hidden;
   max-width: 100%;
   margin: auto;
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block {
+.wp-block-soivigol-soivigol-slider .inner-container,
+.wp-block-soivigol-soivigol-slider .glider-block {
   width: -moz-max-content;
   width: max-content;
   padding: 0.5rem 0;
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.glider,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.glider {
+.wp-block-soivigol-soivigol-slider .inner-container.glider,
+.wp-block-soivigol-soivigol-slider .glider-block.glider {
   width: auto;
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.best-option,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.best-option {
+.wp-block-soivigol-soivigol-slider .inner-container.best-option,
+.wp-block-soivigol-soivigol-slider .glider-block.best-option {
   max-width: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip {
+.wp-block-soivigol-soivigol-slider .inner-container.grip,
+.wp-block-soivigol-soivigol-slider .glider-block.grip {
   max-width: 100%;
   width: 100%;
   display: grid;
@@ -48,33 +48,33 @@
   grid-gap: 1rem;
 }
 @media (max-width: 768px) {
-  .wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip,
-  .wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip {
+  .wp-block-soivigol-soivigol-slider .inner-container.grip,
+  .wp-block-soivigol-soivigol-slider .glider-block.grip {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.size-medium,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.size-medium {
+.wp-block-soivigol-soivigol-slider .inner-container.grip.size-medium,
+.wp-block-soivigol-soivigol-slider .glider-block.grip.size-medium {
   grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 768px) {
-  .wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.size-medium,
-  .wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.size-medium {
+  .wp-block-soivigol-soivigol-slider .inner-container.grip.size-medium,
+  .wp-block-soivigol-soivigol-slider .glider-block.grip.size-medium {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.size-big,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.size-big {
+.wp-block-soivigol-soivigol-slider .inner-container.grip.size-big,
+.wp-block-soivigol-soivigol-slider .glider-block.grip.size-big {
   grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 768px) {
-  .wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.size-big,
-  .wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.size-big {
+  .wp-block-soivigol-soivigol-slider .inner-container.grip.size-big,
+  .wp-block-soivigol-soivigol-slider .glider-block.grip.size-big {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.maps.size-big,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.maps.size-big {
+.wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-big,
+.wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-big {
   grid-template-columns: repeat(2, 1fr);
   max-width: calc(100% - 80px);
   margin-left: auto;
@@ -82,36 +82,36 @@
   grid-gap: 2.5rem;
 }
 @media (max-width: 768px) {
-  .wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.maps.size-big,
-  .wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.maps.size-big {
+  .wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-big,
+  .wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-big {
     grid-template-columns: repeat(2, 1fr);
     max-width: calc(100% - 20px);
     grid-gap: 1rem;
   }
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.maps.size-super-big,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.maps.size-super-big {
+.wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-super-big,
+.wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-super-big {
   grid-template-columns: repeat(1, 1fr);
   max-width: calc(100% - 240px);
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 768px) {
-  .wp-block-chavetas-bloques-chavetas-cluster .inner-container.grip.maps.size-super-big,
-  .wp-block-chavetas-bloques-chavetas-cluster .glider-block.grip.maps.size-super-big {
+  .wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-super-big,
+  .wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-super-big {
     grid-template-columns: repeat(1, 1fr);
     max-width: calc(100% - 80px);
   }
 }
-.wp-block-chavetas-bloques-chavetas-cluster .inner-container.slider,
-.wp-block-chavetas-bloques-chavetas-cluster .glider-block.slider {
+.wp-block-soivigol-soivigol-slider .inner-container.slider,
+.wp-block-soivigol-soivigol-slider .glider-block.slider {
   position: relative;
   background-color: transparent;
 }
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-prev,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-prev,
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-next,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-next {
+.wp-block-soivigol-soivigol-slider button.glider-prev,
+.wp-block-soivigol-soivigol-slider i.glider-prev,
+.wp-block-soivigol-soivigol-slider button.glider-next,
+.wp-block-soivigol-soivigol-slider i.glider-next {
   font-size: 30px;
   width: 2rem;
   height: 2rem;
@@ -122,37 +122,37 @@
   align-items: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-prev svg,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-prev svg,
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-next svg,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-next svg {
+.wp-block-soivigol-soivigol-slider button.glider-prev svg,
+.wp-block-soivigol-soivigol-slider i.glider-prev svg,
+.wp-block-soivigol-soivigol-slider button.glider-next svg,
+.wp-block-soivigol-soivigol-slider i.glider-next svg {
   width: 0.6rem;
   fill: #82d3d4;
 }
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-prev,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-prev {
+.wp-block-soivigol-soivigol-slider button.glider-prev,
+.wp-block-soivigol-soivigol-slider i.glider-prev {
   left: -0.6rem;
 }
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-prev svg,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-prev svg {
+.wp-block-soivigol-soivigol-slider button.glider-prev svg,
+.wp-block-soivigol-soivigol-slider i.glider-prev svg {
   margin-right: 0.2rem;
 }
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-next,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-next {
+.wp-block-soivigol-soivigol-slider button.glider-next,
+.wp-block-soivigol-soivigol-slider i.glider-next {
   right: -0.6rem;
 }
-.wp-block-chavetas-bloques-chavetas-cluster button.glider-next svg,
-.wp-block-chavetas-bloques-chavetas-cluster i.glider-next svg {
+.wp-block-soivigol-soivigol-slider button.glider-next svg,
+.wp-block-soivigol-soivigol-slider i.glider-next svg {
   margin-left: 0.2rem;
 }
-.wp-block-chavetas-bloques-chavetas-cluster .glider-next.disabled, .wp-block-chavetas-bloques-chavetas-cluster .glider-prev.disabled {
+.wp-block-soivigol-soivigol-slider .glider-next.disabled, .wp-block-soivigol-soivigol-slider .glider-prev.disabled {
   opacity: 0.5;
 }
 @media (max-width: 1024px) {
-  .wp-block-chavetas-bloques-chavetas-cluster button.glider-prev,
-  .wp-block-chavetas-bloques-chavetas-cluster i.glider-prev,
-  .wp-block-chavetas-bloques-chavetas-cluster button.glider-next,
-  .wp-block-chavetas-bloques-chavetas-cluster i.glider-next {
+  .wp-block-soivigol-soivigol-slider button.glider-prev,
+  .wp-block-soivigol-soivigol-slider i.glider-prev,
+  .wp-block-soivigol-soivigol-slider button.glider-next,
+  .wp-block-soivigol-soivigol-slider i.glider-next {
     display: block;
   }
 }

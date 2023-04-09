@@ -40,13 +40,7 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 function Edit(props) {
-  const MY_TEMPLATE = [['core/image', {
-    className: 'cha-image-cluster',
-    size: 'medium'
-  }], ['core/paragraph', {
-    placeholder: 'Pie del cluster',
-    className: 'cha-footer-cluster'
-  }]];
+  const MY_TEMPLATE = [['core/paragraph', {}]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
     templateLock: false,
     template: MY_TEMPLATE

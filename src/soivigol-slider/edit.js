@@ -157,7 +157,7 @@ export default function Edit( props ) {
 						renderAppender={
 							hasChildBlocks
 								? undefined
-								: () => <InnerBlocks.ButtonBlockAppender />
+								: () => <button className='components-button'>Add Slider</button>
 						}
 					/>
 				</div>

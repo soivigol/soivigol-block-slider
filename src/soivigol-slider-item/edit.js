@@ -29,8 +29,7 @@ import './editor.scss';
 export default function Edit( props ) {
 
 	const MY_TEMPLATE = [
-		['core/image', { className: 'cha-image-cluster', size: 'medium' } ],
-		['core/paragraph', {placeholder: 'Pie del cluster', className:'cha-footer-cluster'}],
+		['core/paragraph', {}],
 	];
 
 	return (
