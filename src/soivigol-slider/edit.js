@@ -1,4 +1,11 @@
 /**
+ * Retrieves the translation of text.
+ *
+ * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
+ */
+import { __ } from '@wordpress/i18n';
+
+/**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
@@ -7,15 +14,15 @@
 import {
 	useBlockProps,
 	InspectorControls,
-	InnerBlocks,
+	InnerBlocks
 } from '@wordpress/block-editor';
 
 import {
 	PanelBody,
 	PanelRow,
-	SelectControl,
+	RangeControl,
+	ToggleControl
 } from '@wordpress/components';
-
 
 
 /**
@@ -37,8 +44,7 @@ import './editor.scss';
 export default function Edit( props ) {
 	const {
 		setAttributes,
-		attributes: { type, format, size, design },
-		hasChildBlocks,
+		attributes: { useArrows, useDots, numDesktop, numTablet, numMobile }
 	} = props;
 
 	const ALLOWED_BLOCKS = [ 'soivigol/soivigol-slider-item' ];
@@ -50,115 +56,74 @@ export default function Edit( props ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title="Clusters Chavetas" initialOpen={ true }>
-					<PanelRow>Elige el tipo de cluster</PanelRow>
-					<PanelRow>
-					<SelectControl
-						label="Tipo"
-						value={ type }
-						options={ [
-							{ label: 'Normal', value: 'normal' },
-							{ label: 'Rutas/Mapas', value: 'maps' },
-							{ label: 'Mejor opción', value: 'best-option' },
-						] }
-						onChange={ ( value ) => {
-								if ( 'best-option' === value ) {
-									setAttributes( { type: value } )
-									setAttributes( { design: 'best-option' } )
-									setAttributes( { size: 'super-big' } )
-									setAttributes( { format: '1'} )
-								} else {
-									setAttributes( { type: value } )
-									setAttributes( { design: 'grip' } )
-									setAttributes( { size: 'big' } )
-								}
-							}
-						}
-					/>
+				<PanelBody title="Número de Slides visibles" initialOpen={ true }>
+					<PanelRow className="number">
+						<RangeControl
+							label= { __( 'Desktop', 'soivigol-sliders' ) }
+							value={ numDesktop }
+							onChange={ (value) => setAttributes( { numDesktop: value } ) }
+							min={ 1 }
+							max={ 6 }
+						/>
 					</PanelRow>
-					{
-						'normal' === type ? (
-							<>
-							<PanelRow>
-								<SelectControl
-									label="Tamaño"
-									value={ size }
-									options={ [
-										{ label: 'Pequeño', value: 'small' },
-										{ label: 'Mediano', value: 'medium' },
-										{ label: 'Grande', value: 'big' },
-									] }
-									onChange={ ( value ) =>
-										setAttributes( { size: value } )
-									}
-								/>
-							</PanelRow>
-							<PanelRow>
-							<SelectControl
-								label="Diseño"
-								value={ design }
-								options={ [
-									{ label: 'Slider', value: 'slider' },
-									{ label: 'Grip', value: 'grip' },
-								] }
-								onChange={ ( value ) =>
-									setAttributes( { design: value } )
-								}
-							/>
-							</PanelRow>
-							<PanelRow>¿Vas a meter texto y el link en el box?</PanelRow>
-							<PanelRow>
-								<SelectControl
-									label="Formato"
-									value={ format }
-									options={ [
-										{ label: 'Sin texto', value: '0' },
-										{ label: 'Con texto', value: '1' },
-									] }
-									onChange={ ( value ) =>
-										setAttributes( { format: value } )
-									}
-								/>
-
-							</PanelRow>
-							<PanelRow>
-							<div>¡¡Ojo!! En los shortcodes se ponen %, no le des más vueltas</div>
-							</PanelRow>
-							</>
-						) : (
-							<>
-							{
-								'best-option' !== type && (
-									<SelectControl
-										label="Tamaño"
-										value={ size }
-										options={ [
-											{ label: 'Mediano', value: 'big' },
-											{ label: 'Grande', value: 'super-big' },
-										] }
-										onChange={ ( value ) =>
-											setAttributes( { size: value } )
-										}
-									/>
-								)
+					<PanelRow className="number">
+						<RangeControl
+							label= { __( 'Tablet', 'soivigol-sliders' ) }
+							value={ numTablet }
+							onChange={ (value) => setAttributes( { numTablet: value } ) }
+							min={ 1 }
+							max={ 6 }
+						/>
+					</PanelRow>
+					<PanelRow className="number">
+						<RangeControl
+							label= { __( 'Mobile', 'soivigol-sliders' ) }
+							value={ numMobile }
+							onChange={ (value) => setAttributes( { numMobile: value } ) }
+							min={ 1 }
+							max={ 6 }
+						/>
+					</PanelRow>
+					<PanelRow>
+						<ToggleControl
+							label={ __( 'Arrows', 'soivigol-sliders' ) }
+							help={
+								useArrows
+									? __( 'With Arrows', 'soivigol-sliders' )
+									: __( 'Without Arrows', 'soivigol-sliders' )
 							}
-							</>
-						)
-					}
+							checked={ useArrows }
+							onChange={ () => {
+								setAttributes( { useArrows: ! useArrows } )
+							} }
+						/>
+					</PanelRow>
+					<PanelRow>
+						<ToggleControl
+							label={ __( 'Dots', 'soivigol-sliders' ) }
+							help={
+								useDots
+									? __( 'With Dots', 'soivigol-sliders' )
+									: __( 'Without Dots', 'soivigol-sliders' )
+							}
+							checked={ useDots }
+							onChange={ () => {
+								setAttributes( { useDots: ! useDots } )
+							} }
+						/>
+					</PanelRow>
 				</PanelBody>
 			</InspectorControls>
 			<div {...useBlockProps()}>
-				<div className={ `inner-container ${design} ${type} size-${ size }` }>
+				<div className={ `inner-container num-${ numDesktop }` }>
 					<InnerBlocks
 						templateLock={ false }
 						template={ MY_TEMPLATE }
 						allowedBlocks={ ALLOWED_BLOCKS }
 						orientation="horizontal"
-						renderAppender={
-							hasChildBlocks
-								? undefined
-								: () => <button className='components-button'>Add Slider</button>
-						}
+						renderAppender={ () => (
+							<span className='soivigol-block-appender'><InnerBlocks.ButtonBlockAppender/>Add Slider</span>
+						) }
 					/>
 				</div>
 			</div>

@@ -10,21 +10,25 @@
     "html": false
   },
   "attributes": {
-    "type": {
-      "type": "string",
-      "default": "normal"
+    "numDesktop": {
+      "type": "number",
+      "default": 3
     },
-    "format": {
-      "type": "string",
-      "default": "0"
+    "numTablet": {
+      "type": "number",
+      "default": 2
     },
-    "size": {
-      "type": "string",
-      "default": "small"
+    "numMobile": {
+      "type": "number",
+      "default": 1
     },
-    "design": {
-      "type": "string",
-      "default": "slider"
+    "useArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "useDots": {
+      "type": "boolean",
+      "default": true
     }
   },
   "providesContext": {

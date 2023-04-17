@@ -12,66 +12,54 @@
 		> .block-editor-inner-blocks > .block-editor-block-list__layout {
 			width: max-content;
 			padding-bottom: 2rem;
+			padding-left: .5rem;
+			padding-right: .5rem;
+			display: flex;
+			gap: 1rem;
 		}
-		&.grip {
-			display: block !important;
-			> .block-editor-inner-blocks > .block-editor-block-list__layout {
-				width: 100%;
-				max-width: 100%;
-				width: 100%;
-				display: grid;
-				grid-auto-rows: 1fr;
-				grid-template-columns: repeat(4, 1fr);
-				grid-gap: 1rem;
-				@media( max-width : 768px ) {
-					grid-template-columns: repeat(3, 1fr);
-				}
+		&.num-3 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 33% - 1rem );
 			}
 		}
-		&.best-option {
-			display: block !important;
-			> .block-editor-inner-blocks > .block-editor-block-list__layout {
-				width: 100%;
-				max-width: 100%;
-				width: 100%;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
+		&.num-4 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 25% - 1rem );
 			}
 		}
-		&.size-medium {
-			> .block-editor-inner-blocks > .block-editor-block-list__layout {
-				grid-template-columns: repeat(3, 1fr);
-				@media( max-width : 768px ) {
-					grid-template-columns: repeat(2, 1fr);
-				}
+		&.num-5 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 20% - 1rem );
 			}
 		}
-		&.size-big {
-			> .block-editor-inner-blocks > .block-editor-block-list__layout {
-				grid-template-columns: repeat(2, 1fr);
-				@media( max-width : 768px ) {
-					grid-template-columns: repeat(1, 1fr);
-				}
-			}
-		}
-		&.size-super-big {
-			> .block-editor-inner-blocks > .block-editor-block-list__layout {
-				grid-template-columns: repeat(1, 1fr);
-				@media( max-width : 768px ) {
-					grid-template-columns: repeat(1, 1fr);
-				}
+
+		&.num-6 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 16% - 1rem );
 			}
 		}
 	}
 	.block-list-appender.block-list-appender {
-		position: absolute !important;
-		bottom: 0;
-		left: 0;
-		border: 0;
-		box-shadow: unset;
-		box-shadow: 0 0 0 2px inset lightgrey;
-		right: auto !important;
+		position: absolute;
+    	left: 0;
+		.soivigol-block-appender {
+			background-color: transparent;
+			border: 1px solid;
+			padding: .6rem;
+			position: relative;
+			.block-editor-button-block-appender {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				padding: 0;
+				box-shadow: unset;
+				svg {
+					display: none;
+				}
+			}
+		}
 	}
 	&:hover{
 		border: 1px solid lightblue;
@@ -101,4 +89,10 @@
 	position: relative;
 	box-shadow: unset;
 	outline: none;
+}
+
+.components-panel__row {
+	.components-range-control {
+		width: 80%;
+	}
 }
