@@ -10,7 +10,7 @@ import {
 	InnerBlocks,
 } from '@wordpress/block-editor';
 
-import { useEffect } from '@wordpress/element'
+import { useEffect, useState } from '@wordpress/element'
 
 
 import './editor.scss';
@@ -32,8 +32,28 @@ export default function Edit( props ) {
 		['core/paragraph', {}],
 	];
 
+	const [ numDesktop, setNumDesktop ] = useState( 0 )
+
+	const [ widthInner, setWidthInner ] = useState( 0 )
+
+	useEffect( () => {
+		setNumDesktop( props.context['soivigol/slider-numDesktop'] )
+	}, [props.context['soivigol/slider-numDesktop']])
+
+	useEffect( () => {
+		setTimeout( () => {
+			const innerElement = document.querySelector( 'div.wp-block' )
+			setWidthInner( innerElement.getBoundingClientRect().width )
+		},1000)
+	},[])
+
+	useEffect( () => {
+		const innerElement = document.querySelector( 'div.wp-block' )
+		setWidthInner( innerElement.getBoundingClientRect().width )
+	},[ numDesktop ])
+
 	return (
-		<div {...useBlockProps()}>
+		<div {...useBlockProps()} style={{ width: widthInner / numDesktop + 'px' }}>
 			<InnerBlocks
 				templateLock={ false }
 				template={ MY_TEMPLATE }

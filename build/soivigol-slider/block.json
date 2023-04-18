@@ -32,8 +32,7 @@
     }
   },
   "providesContext": {
-    "chavetas-blocks/chavetas-cluster-format": "format",
-    "chavetas-blocks/chavetas-cluster-type": "type"
+    "soivigol/slider-numDesktop": "numDesktop"
   },
   "textdomain": "chavetas-blocks",
   "editorScript": "file:./index.js",

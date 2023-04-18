@@ -30,84 +30,6 @@
 .wp-block-soivigol-soivigol-slider .glider-block.glider {
   width: auto;
 }
-.wp-block-soivigol-soivigol-slider .inner-container.best-option,
-.wp-block-soivigol-soivigol-slider .glider-block.best-option {
-  max-width: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.wp-block-soivigol-soivigol-slider .inner-container.grip,
-.wp-block-soivigol-soivigol-slider .glider-block.grip {
-  max-width: 100%;
-  width: 100%;
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-}
-@media (max-width: 768px) {
-  .wp-block-soivigol-soivigol-slider .inner-container.grip,
-  .wp-block-soivigol-soivigol-slider .glider-block.grip {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.wp-block-soivigol-soivigol-slider .inner-container.grip.size-medium,
-.wp-block-soivigol-soivigol-slider .glider-block.grip.size-medium {
-  grid-template-columns: repeat(3, 1fr);
-}
-@media (max-width: 768px) {
-  .wp-block-soivigol-soivigol-slider .inner-container.grip.size-medium,
-  .wp-block-soivigol-soivigol-slider .glider-block.grip.size-medium {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.wp-block-soivigol-soivigol-slider .inner-container.grip.size-big,
-.wp-block-soivigol-soivigol-slider .glider-block.grip.size-big {
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (max-width: 768px) {
-  .wp-block-soivigol-soivigol-slider .inner-container.grip.size-big,
-  .wp-block-soivigol-soivigol-slider .glider-block.grip.size-big {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-.wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-big,
-.wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-big {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: calc(100% - 80px);
-  margin-left: auto;
-  margin-right: auto;
-  grid-gap: 2.5rem;
-}
-@media (max-width: 768px) {
-  .wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-big,
-  .wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-big {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: calc(100% - 20px);
-    grid-gap: 1rem;
-  }
-}
-.wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-super-big,
-.wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-super-big {
-  grid-template-columns: repeat(1, 1fr);
-  max-width: calc(100% - 240px);
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 768px) {
-  .wp-block-soivigol-soivigol-slider .inner-container.grip.maps.size-super-big,
-  .wp-block-soivigol-soivigol-slider .glider-block.grip.maps.size-super-big {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: calc(100% - 80px);
-  }
-}
-.wp-block-soivigol-soivigol-slider .inner-container.slider,
-.wp-block-soivigol-soivigol-slider .glider-block.slider {
-  position: relative;
-  background-color: transparent;
-}
 .wp-block-soivigol-soivigol-slider button.glider-prev,
 .wp-block-soivigol-soivigol-slider i.glider-prev,
 .wp-block-soivigol-soivigol-slider button.glider-next,
@@ -116,22 +38,21 @@
   width: 2rem;
   height: 2rem;
   border-radius: 100%;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 .wp-block-soivigol-soivigol-slider button.glider-prev svg,
 .wp-block-soivigol-soivigol-slider i.glider-prev svg,
 .wp-block-soivigol-soivigol-slider button.glider-next svg,
 .wp-block-soivigol-soivigol-slider i.glider-next svg {
   width: 0.6rem;
-  fill: #82d3d4;
+  fill: darkgray;
 }
 .wp-block-soivigol-soivigol-slider button.glider-prev,
 .wp-block-soivigol-soivigol-slider i.glider-prev {
-  left: -0.6rem;
+  left: -2rem;
 }
 .wp-block-soivigol-soivigol-slider button.glider-prev svg,
 .wp-block-soivigol-soivigol-slider i.glider-prev svg {
@@ -139,7 +60,7 @@
 }
 .wp-block-soivigol-soivigol-slider button.glider-next,
 .wp-block-soivigol-soivigol-slider i.glider-next {
-  right: -0.6rem;
+  right: -2rem;
 }
 .wp-block-soivigol-soivigol-slider button.glider-next svg,
 .wp-block-soivigol-soivigol-slider i.glider-next svg {
@@ -147,6 +68,9 @@
 }
 .wp-block-soivigol-soivigol-slider .glider-next.disabled, .wp-block-soivigol-soivigol-slider .glider-prev.disabled {
   opacity: 0.5;
+}
+.wp-block-soivigol-soivigol-slider .glider-dot.active {
+  background-color: darkgray;
 }
 @media (max-width: 1024px) {
   .wp-block-soivigol-soivigol-slider button.glider-prev,

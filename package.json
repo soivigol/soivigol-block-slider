@@ -16,5 +16,9 @@
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^26.1.0"
+	},
+	"dependencies": {
+		"react-glider": "^4.0.2",
+		"react-resize-detector": "^9.1.0"
 	}
 }
