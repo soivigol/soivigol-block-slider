@@ -62,7 +62,7 @@ export default function Edit( props ) {
 				<PanelBody title="Número de Slides visibles" initialOpen={ true }>
 					<PanelRow className="number">
 						<RangeControl
-							label= { __( 'Desktop', 'soivigol-sliders' ) }
+							label= { __( 'Desktop', 'soivigol-block-slider' ) }
 							value={ numDesktop }
 							onChange={ (value) => setAttributes( { numDesktop: value } ) }
 							min={ 1 }
@@ -71,7 +71,7 @@ export default function Edit( props ) {
 					</PanelRow>
 					<PanelRow className="number">
 						<RangeControl
-							label= { __( 'Tablet', 'soivigol-sliders' ) }
+							label= { __( 'Tablet', 'soivigol-block-slider' ) }
 							value={ numTablet }
 							onChange={ (value) => setAttributes( { numTablet: value } ) }
 							min={ 1 }
@@ -80,7 +80,7 @@ export default function Edit( props ) {
 					</PanelRow>
 					<PanelRow className="number">
 						<RangeControl
-							label= { __( 'Mobile', 'soivigol-sliders' ) }
+							label= { __( 'Mobile', 'soivigol-block-slider' ) }
 							value={ numMobile }
 							onChange={ (value) => setAttributes( { numMobile: value } ) }
 							min={ 1 }
@@ -89,11 +89,11 @@ export default function Edit( props ) {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={ __( 'Arrows', 'soivigol-sliders' ) }
+							label={ __( 'Arrows', 'soivigol-block-slider' ) }
 							help={
 								useArrows
-									? __( 'With Arrows', 'soivigol-sliders' )
-									: __( 'Without Arrows', 'soivigol-sliders' )
+									? __( 'With Arrows', 'soivigol-block-slider' )
+									: __( 'Without Arrows', 'soivigol-block-slider' )
 							}
 							checked={ useArrows }
 							onChange={ () => {
@@ -103,11 +103,11 @@ export default function Edit( props ) {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={ __( 'Dots', 'soivigol-sliders' ) }
+							label={ __( 'Dots', 'soivigol-block-slider' ) }
 							help={
 								useDots
-									? __( 'With Dots', 'soivigol-sliders' )
-									: __( 'Without Dots', 'soivigol-sliders' )
+									? __( 'With Dots', 'soivigol-block-slider' )
+									: __( 'Without Dots', 'soivigol-block-slider' )
 							}
 							checked={ useDots }
 							onChange={ () => {
@@ -125,7 +125,7 @@ export default function Edit( props ) {
 						allowedBlocks={ ALLOWED_BLOCKS }
 						orientation="horizontal"
 						renderAppender={ () => (
-							<span className='soivigol-block-appender'><InnerBlocks.ButtonBlockAppender/>Add Slider</span>
+							<span className='soivigol-block-appender'><InnerBlocks.ButtonBlockAppender/>{ __( 'Add Slider', 'soivigol-block-slider' ) }</span>
 						) }
 					/>
 				</div>
