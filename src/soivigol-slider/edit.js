@@ -59,7 +59,7 @@ export default function Edit( props ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title="Número de Slides visibles" initialOpen={ true }>
+				<PanelBody title={ __( 'Settings', 'soivigol-block-slider' )} initialOpen={ true }>
 					<PanelRow className="number">
 						<RangeControl
 							label= { __( 'Desktop', 'soivigol-block-slider' ) }
@@ -114,6 +114,9 @@ export default function Edit( props ) {
 								setAttributes( { useDots: ! useDots } )
 							} }
 						/>
+					</PanelRow>
+					<PanelRow>
+						<p>The sliders with the Dots or the Arrows will show only in front. Here, you can use the botton scroll bar to navigate by the slider content</p>
 					</PanelRow>
 				</PanelBody>
 			</InspectorControls>

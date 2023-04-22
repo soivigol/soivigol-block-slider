@@ -4,3 +4,9 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-soivigol-soivigol-slider-item.wp-block-soivigol-soivigol-slider-item.wp-block-soivigol-soivigol-slider-item {
+	margin-right: 1rem;
+	&:last-child {
+		margin-right: 0;
+	}
+}

@@ -12,7 +12,6 @@ import {
 
 import { useEffect, useState } from '@wordpress/element'
 
-
 import './editor.scss';
 
 /**
@@ -39,11 +38,14 @@ export default function Edit( props ) {
 	useEffect( () => {
 		setNumDesktop( props.context['soivigol/slider-numDesktop'] )
 	}, [props.context['soivigol/slider-numDesktop']])
-
++
 	useEffect( () => {
-		setTimeout( () => {
+		const interval = setInterval( () => {
 			const innerElement = document.querySelector( 'div.wp-block' )
-			setWidthInner( innerElement.getBoundingClientRect().width )
+			if ( innerElement ) {
+				clearInterval( interval )
+				setWidthInner( innerElement.getBoundingClientRect().width )
+			}
 		},1000)
 	},[])
 
