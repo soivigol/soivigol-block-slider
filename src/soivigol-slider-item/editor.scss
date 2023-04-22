@@ -4,3 +4,10 @@
 		border: 1px solid lightblue;
 	}
 }
+
+.wp-block-soivigol-soivigol-slider-item.wp-block-soivigol-soivigol-slider-item.wp-block-soivigol-soivigol-slider-item {
+	margin-right: 0rem !important;
+	&:last-child {
+		margin-right: 0;
+	}
+}

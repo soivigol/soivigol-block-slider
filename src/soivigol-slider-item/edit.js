@@ -12,6 +12,8 @@ import {
 
 import { useEffect, useState } from '@wordpress/element'
 
+import { useRef } from "react";
+
 import './editor.scss';
 
 /**
@@ -27,6 +29,8 @@ import './editor.scss';
  */
 export default function Edit( props ) {
 
+	const inputRef = useRef(null);
+
 	const MY_TEMPLATE = [
 		['core/paragraph', {}],
 	];
@@ -38,24 +42,26 @@ export default function Edit( props ) {
 	useEffect( () => {
 		setNumDesktop( props.context['soivigol/slider-numDesktop'] )
 	}, [props.context['soivigol/slider-numDesktop']])
-+
+
 	useEffect( () => {
 		const interval = setInterval( () => {
-			const innerElement = document.querySelector( 'div.wp-block' )
-			if ( innerElement ) {
+			const inner = inputRef.current.parentNode.parentNode.parentNode.parentNode
+			if ( inner.classList.contains( 'wp-block-soivigol-soivigol-slider' ) ) {
 				clearInterval( interval )
-				setWidthInner( innerElement.getBoundingClientRect().width )
+				setWidthInner( inner.getBoundingClientRect().width )
 			}
 		},1000)
 	},[])
 
 	useEffect( () => {
-		const innerElement = document.querySelector( 'div.wp-block' )
-		setWidthInner( innerElement.getBoundingClientRect().width )
+		const inner = inputRef.current.parentNode.parentNode.parentNode.parentNode
+		if ( inner.classList.contains( 'wp-block-soivigol-soivigol-slider' ) ) {
+			setWidthInner( inner.getBoundingClientRect().width )
+		}
 	},[ numDesktop ])
 
 	return (
-		<div {...useBlockProps()} style={{ width: widthInner / numDesktop + 'px' }}>
+		<div {...useBlockProps()} ref={ inputRef } style={{ width: ( ( widthInner / numDesktop ) - 16 ) + 'px' }}>
 			<InnerBlocks
 				templateLock={ false }
 				template={ MY_TEMPLATE }

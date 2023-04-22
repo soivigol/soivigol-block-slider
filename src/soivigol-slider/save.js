@@ -19,7 +19,7 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 
 	return (
 		<div { ...useBlockProps.save() }>
-			<div class={ `glider-contain` } data-desktop={ numDesktop } data-tablet={ numTablet } data-mobile={ numMobile }>
+			<div class={ `glider-contain ${ useDots ? 'with-dots' : '' }` } data-desktop={ numDesktop } data-tablet={ numTablet } data-mobile={ numMobile }>
 				<div class="glider-block">
 					<InnerBlocks.Content />
 				</div>
