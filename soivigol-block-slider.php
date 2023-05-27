@@ -55,7 +55,7 @@ function soivigol_enqueue_glider_in_block_slider( $content ) {
 		wp_enqueue_script(
 			'soivigol-custom-block-slider-js',
 			plugin_dir_url( __FILE__ ) . '/assets/js/soivigol-blocks.js',
-			array( 'soivigol-glider' ),
+			array( 'soivigol-glider-block-slider-js' ),
 			SOIVIGOL_VERSION,
 			true,
 		);
