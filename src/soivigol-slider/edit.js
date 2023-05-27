@@ -24,9 +24,6 @@ import {
 	ToggleControl
 } from '@wordpress/components';
 
-import Glider from 'react-glider';
-import 'glider-js/glider.min.css';
-
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.

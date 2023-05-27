@@ -2,7 +2,7 @@ window.addEventListener( 'load', () => {
 	const allGlider = document.querySelectorAll( '.glider-block' );
 	allGlider.forEach( el => {
 		const parent = el.parentNode;
-		const numDesktop = parent.getAttribute( 'data-desktop' );console.log( numDesktop )
+		const numDesktop = parent.getAttribute( 'data-desktop' );
 		const numMobile = parent.getAttribute( 'data-mobile' );
 		const numTablet = parent.getAttribute( 'data-tablet' );
 
