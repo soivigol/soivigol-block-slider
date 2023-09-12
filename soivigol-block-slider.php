@@ -5,7 +5,7 @@
  * You can insert images o groups with other elements.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           1.0
+ * Version:           1.0.1
  * Author:            David Viña
  * Author URI:        https://sovigol.dev
  * License:           GPL-2.0-or-later
@@ -17,7 +17,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define( 'SOIVIGOL_VERSION', '1.0' );
+define( 'SOIVIGOL_VERSION', '1.0.1' );
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
